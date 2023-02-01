@@ -1,0 +1,213 @@
+html body{
+    height: 100%;
+    margin: 0;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.navbar{
+    height: 10%;
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 9%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: large;
+}
+span{
+    color: #f9004d;
+}
+.header{
+    padding-top: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.15s;
+}
+nav ul li a:hover{
+    color:#f9004d;
+}
+.content{
+    height: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+}
+.photo{
+    height: 70%;
+    width: 18%;
+    border: 10px solid rgb(255, 255, 255);
+    margin-top: 35px;
+    background-image: url(https://avatars.githubusercontent.com/u/67555994?v=4);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 300%;
+}
+.info{
+    height: 97%;
+    width: 65%;
+    border: none;
+    margin-top: 5px;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-left: 500px;
+    font-size: 75px;
+}
+.intro{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-left: 510px;
+    font-size: 55px;
+}
+.outro{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-left: 508px;
+    font-size: 35px;
+}
+.skills{
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+.program{
+    height: 97%;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    align-items: center;
+    margin-left: 150px;
+}
+.hobbies{
+    height: 97%;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    align-items: center;
+    margin-left: 150px;
+
+}
+#menu {
+    z-index: 2;
+}
+  
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+  
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #DC052D;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+  
+#bar1 {
+    transform: translateY(-4px);
+}
+  
+#bar3 {
+    transform: translateY(4px);
+}
+  
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+  
+.nav ul {
+    padding: 0 22px;
+}
+  
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+  
+.nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+  
+.nav li a:hover {
+    font-weight: bold;
+}
+  
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+  
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #000000, #000000);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+  
+.change {
+    display: block;
+}
+  
+.change .bar {
+    background-color: white;
+}
+  
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+  
+.change #bar2 {
+    opacity: 0;
+}
+  
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+  
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-40%,-30%);
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 15px;
+
+}
